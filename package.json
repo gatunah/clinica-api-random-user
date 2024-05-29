@@ -1,0 +1,23 @@
+{
+  "name": "desafio-dia-11---citas-medicas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniela R.",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
+    "chalk": "^4.1.2",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "jquery": "^3.7.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "nodemon": "^3.1.1",
+    "uuid": "^9.0.1"
+  }
+}

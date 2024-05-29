@@ -1,0 +1,43 @@
+<div class="col-12">
+  <div class="card mx-auto mt-4 text-center">
+    <div class="card-header">
+      <b>Pacientes filtrados por género</b>
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>UUID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Timestamp</th>
+          <th>Género</th>
+        </tr>
+      </thead>
+      <tbody id="table-body-genero">
+        {{#each pacientesPorGenero}}
+          {{#if @first}}
+            <tr>
+              <td colspan="6" style="font-weight: bold;">Mujeres</td>
+            </tr>
+          {{else}}
+            <tr>
+              <td colspan="6" style="font-weight: bold;">Hombres</td>
+            </tr>
+          {{/if}}
+          {{#each this}}
+            <tr>
+              <td>{{@index}}</td>
+              <td>{{uuid}}</td>
+              <td>{{nombre}}</td>
+              <td>{{apellido}}</td>
+              <td>{{timeStamp}}</td>
+              <td>{{genero}}</td>
+            </tr>
+          {{/each}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
